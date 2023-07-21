@@ -1632,7 +1632,7 @@ namespace PnP.Framework.Provisioning.ObjectHandlers
                     cts => cts.Include(
                         ct => ct.Id,
                         ct => ct.Name,
-                        ct => ct.FieldLinks.Include(fl => fl.Id, fl => fl.Hidden)
+                        ct => ct.FieldLinks.Include(fl => fl.Id, fl => fl.Hidden, fl => fl.Required)
                     ),
                     searchInSiteHierarchy: true
                     );
